@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Photos/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <img src="Photos/logo.svg" alt="Logo">
+    </header>
+    <main>
+        <article class="form">
+            <section>
+                <h2>Bill</h2>
+                <h2 class="error-message" id="bill-error-message">Can't be zero!</h2>
+                <input type="number" name="Bill" id="bill" placeholder="0" min="0">
+                <img src="Photos/icon-dollar.svg" name="bill" alt="">
+            </section>
+            <section class="tip-container">
+                <h2>Select Tip %</h2>
+                <div class="values" id="button-container">
+                    <button id="5">5%</button>
+                    <button id="10">10%</button>
+                    <button id="15">15%</button>
+                    <button id="25">25%</button>
+                    <button id="50">50%</button>
+                    <h2 class="error-message" id="bill-error-message">Can't be zero!</h2>
+                    <input type="number" name="Custom" id="customValue" placeholder="Custom" min="0">
+                </div>
+            </section>
+            <section>
+                <h2>Number of People</h2>
+                <h2 class="error-message" id="people-error-message">Can't be zero!</h2>
+                <input type="number" name="people" id="numberPeople" placeholder="0" min="0">
+                <img src="Photos/icon-person.svg" name="people" alt="">
+            </section>
+        </article>
+        <article class="total">
+            <section>
+                <div class="text">
+                    <h2>Tip Amount</h2>
+                    <p>/ person</p>
+                </div>
+                <h3 class="amount">$0.00</h3>
+            </section>
+            <section>
+                <div class="text">
+                    <h2>Total</h2>
+                    <p>/ person</p>
+                </div>
+                <h3 class="amount">$0.00</h3>
+            </section>
+            <button type="reset" id="reset">RESET</button>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
