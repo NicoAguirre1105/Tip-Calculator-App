@@ -86,7 +86,6 @@ function main() {
 
             input.addEventListener('change', (e) => {
                 const inputId = e.srcElement.getAttribute('id')
-                console.log(e)
     
                 if (inputId == 'bill') {
                     if (!inputError(e.srcElement)) {
